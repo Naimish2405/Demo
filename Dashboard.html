@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            height: 100vh;
+            overflow: hidden;
+        }
+        .sidebar {
+            width: 220px; /* Fixed width for sidebar */
+            background-color: #f1f1ed;
+            color: #000000;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            position: fixed;
+            height: 100%;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Optional shadow for a more defined look */
+        }
+        .sidebar h2 {
+            color: #0c0505;
+            margin-top: 0;
+            font-size: 24px; /* Adjust font size for sidebar heading */
+        }
+        .sidebar a {
+            color: #000000;
+            text-decoration: none;
+            display: block;
+            padding: 15px; /* Increased padding for better click area */
+            border-bottom: 1px solid #495057;
+            font-size: 18px; /* Adjust font size for sidebar links */
+        }
+        .sidebar a:hover {
+            background-color: #495057;
+        }
+        .main-content {
+            margin-left: 250px; /* Match sidebar width */
+            padding: 20px;
+            flex-grow: 1;
+            background-color: #f8f9fa;
+        }
+        .navbar {
+            background-color: #000000;
+            color: #fff;
+            padding: 15px 20px; /* Increased padding for navbar */
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for navbar */
+        }
+        .navbar h1 {
+            margin: 0;
+            font-size: 22px; /* Adjust font size for navbar heading */
+        }
+        .navbar button {
+            background-color: #fff;
+            color: #007bff;
+            border: none;
+            padding: 10px 15px; /* Adjust padding for button */
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px; /* Adjust font size for button text */
+        }
+        .navbar button:hover {
+            background-color: #e2e6ea;
+        }
+        .content {
+            margin-top: 20px;
+
+        }
+        .content h2 {
+            color: rgb(32, 43, 202);
+            font-size: 28px; /* Adjust font size for content heading */
+        }
+        .content p {
+            font-size: 16px; /* Adjust font size for content text */
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Dashboard</h2>
+        <a href="#home">Home</a>
+        <a href="#profile">Profile</a>
+        <a href="#settings">Settings</a>
+        <a href="#logout">Logout</a>
+    </div>
+    <div class="main-content">
+        <div class="navbar">
+            <h1>Welcome, student</h1>
+            <button>Profile</button>
+        </div>
+        <div class="content">
+            <h2>QUIZ_APPLICATION</h2>
+            <p>This is your dashboard overview. Here you can find various statistics, updates, and more.</p>
+            <!-- Add more content here as needed -->
+        </div>
+    </div>
+</body>
+</html>

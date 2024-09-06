@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Home Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            height: 100vh;
+            overflow: hidden;
+        }
+        .sidebar {
+            width: 220px; /* Fixed width for sidebar */
+            background-color: #f1f1ed;
+            color: #000000;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            position: fixed;
+            height: 100%;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Optional shadow for a more defined look */
+        }
+        .sidebar h2 {
+            color: #0c0505;
+            margin-top: 0;
+            font-size: 24px; /* Adjust font size for sidebar heading */
+        }
+        .sidebar a {
+            color: #000000;
+            text-decoration: none;
+            display: block;
+            padding: 15px; /* Increased padding for better click area */
+            border-bottom: 1px solid #495057;
+            font-size: 18px; /* Adjust font size for sidebar links */
+        }
+        .sidebar a:hover {
+            background-color: #495057;
+        }
+        .main-content {
+            margin-left: 250px; /* Match sidebar width */
+            padding: 20px;
+            flex-grow: 1;
+            background-color: #f8f9fa;
+        }
+        .navbar {
+            background-color: #000000;
+            color: #fff;
+            padding: 15px 20px; /* Increased padding for navbar */
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for navbar */
+        }
+        .navbar h1 {
+            margin: 0;
+            font-size: 22px; /* Adjust font size for navbar heading */
+        }
+        .navbar button {
+            background-color: #fff;
+            color: #007bff;
+            border: none;
+            padding: 10px 15px; /* Adjust padding for button */
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px; /* Adjust font size for button text */
+        }
+        .navbar button:hover {
+            background-color: #e2e6ea;
+        }
+        .content {
+            margin-top: 20px;
+        }
+        .dashboard {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .dashboard .card {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        .card h3 {
+            margin-top: 0;
+            font-size: 20px;
+        }
+        .card p {
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Dashboard</h2>
+        <a href="home.html">Home</a>
+        <a href="profile.html">Profile</a>
+        <a href="settings.html">Settings</a>
+        <a href="logout.html">Logout</a>
+        <a href="newpage.html">New Page</a> <!-- Link to any new pages -->
+    </div>
+    <div class="main-content">
+        <div class="navbar">
+            <h1>Welcome, student</h1>
+            <button>Profile</button>
+        </div>
+        <div class="content">
+            <h2>QUIZ_APPLICATION</Q></h2>
+            <p>Welcome to your dashboard. Here you can find various metrics and updates at a glance.</p>
+            <div class="dashboard">
+                <div class="card">
+                    <h3>quiz_start</h3>
+                    <a href="" class="btn btn-primary">Ready</a>
+                </div>
+                <div class="card">
+                    <h3>Result</h3>
+                    <a href="" class="btn btn-primary">Ready</a>
+                 </div>
+                <div class="card">
+                    <h3>Notifications</h3>
+                    <p>Keep track of important notifications and messages related to your account.</p>
+                </div>
+                <div class="card">
+                    <h3>Settings</h3>
+                    <p>Quick access to settings and configurations for your account.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
